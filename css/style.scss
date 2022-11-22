@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5.5rem 2.5rem;
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  text-transform: uppercase;
+
+  color: #f2f2f2;
+
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5rem;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin-bottom: 2.125rem;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.display-desktop {
+  display: block;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  .sedans {
+    background: #e38826;
+    border-radius: 10px 10px 0 0;
+    a {
+      color: #e38826;
+    }
+
+    a:hover {
+      color: #f2f2f2;
+    }
+  }
+
+  .suvs {
+    background: #006970;
+    a {
+      color: #006970;
+    }
+
+    a:hover {
+      color: #f2f2f2;
+    }
+  }
+
+  .luxury {
+    background: #004241;
+    border-radius: 0 0 10px 10px;
+    a {
+      color: #004241;
+    }
+
+    a:hover {
+      color: #f2f2f2;
+    }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .card {
+    flex-direction: row;
+    min-height: 500px;
+    max-width: 920px;
+
+    .sedans {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .luxury {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  .display-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
